@@ -20,7 +20,6 @@ class Customer
     def meals
         Meal.all.select do |meal|
             if meal.customer == self
-                meal
             end
         end
     end
