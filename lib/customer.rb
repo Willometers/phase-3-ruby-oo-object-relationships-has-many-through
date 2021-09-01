@@ -1,3 +1,5 @@
+require "pry"
+
 class Customer
 
     attr_accessor :name, :age
@@ -19,8 +21,7 @@ class Customer
   
     def meals
         Meal.all.select do |meal|
-            if meal.customer == self
-            end
+            meal.customer == self
         end
     end
 
